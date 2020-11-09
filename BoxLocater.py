@@ -25,7 +25,7 @@ def getContours(img):
             x_c_s.append(x+(w//2))
             y_c_s.append(y+(h//2))
         
-    if len(y_c_s)!=0 & len(x_c_s)!=0:
+    if (len(y_c_s)!=0) & (len(x_c_s)!=0):
         x_c = sum(x_c_s) // len(x_c_s)
         y_c = sum(y_c_s) // len(y_c_s)
     else
