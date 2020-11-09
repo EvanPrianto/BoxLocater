@@ -28,7 +28,9 @@ def getContours(img):
     if len(y_c_s)!=0 & len(x_c_s)!=0:
         x_c = sum(x_c_s) // len(x_c_s)
         y_c = sum(y_c_s) // len(y_c_s)
-    
+    else
+        x_c,y_c = 0,0
+        
     return x_c,y_c
 
 def findColor(img,myColors,myColorValues):
